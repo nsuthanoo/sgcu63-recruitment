@@ -4,7 +4,7 @@ shape={'0':[['0','0','0','0','0'],['0',' ',' ',' ','0'],['0',' ',' ',' ','0'],['
 #Function to numericalize
 def numericalize(n,m1,m2):
 
-    #Set space between each numbers
+    #Set space between each number
     space=1*m2
     #Change input n to string for easier handling 
     num=str(n)
@@ -13,7 +13,7 @@ def numericalize(n,m1,m2):
 
     #1st Line: Repeat the process of creating first line for m1 times to achieve the desired height 
     for height_n in range(m1):
-        #Loop through each digits in the input n
+        #Loop through each digit in the input n
         for n in num:
             #Get the num shape of the digit and iterate to get the desired width
             for char in shape[n][0]:
